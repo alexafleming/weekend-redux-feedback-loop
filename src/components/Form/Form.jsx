@@ -9,7 +9,7 @@ import {useSelector} from 'react-redux'
 
 
 function Form() {
-  //const [step, setStep] = useState(1);
+
     
   const form = useSelector(store => store.form); 
   
