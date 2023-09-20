@@ -12,6 +12,8 @@ function UnderstandingFeedback() {
     const onClick = () => {
         if (response != '' && response != null) {
             dispatch({ type: 'SET_NEXT_STEP' })
+        } else {
+            alert("Enter a value")
         }
     }
 
@@ -21,7 +23,7 @@ function UnderstandingFeedback() {
         <div>
             <h2>How well are you understanding?</h2>
             <div>
-                <lable>Understanding?</lable>
+                <label>Understanding?</label>
             </div>
             <input
                 type="number"

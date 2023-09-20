@@ -12,6 +12,8 @@ function SupportFeedback() {
     const onClick = () => {
         if (response != '' && response != null) {
             dispatch({ type: 'SET_NEXT_STEP' })
+        } else {
+            alert("Enter a value")
         }
     }
 
@@ -22,7 +24,7 @@ function SupportFeedback() {
         <div>
             <h2>How well are you being supported?</h2>
             <div>
-                <lable>Supported?</lable>
+                <label>Supported?</label>
             </div>
             <input
                 type="number"

@@ -12,7 +12,9 @@ function FeelingsFeedback() {
   const onClick = () => {
     if (response != '' && response != null) {
       dispatch({ type: 'SET_NEXT_STEP' })
-    }
+    }else{
+      alert("Enter a value")
+  }
   }
 
   return (

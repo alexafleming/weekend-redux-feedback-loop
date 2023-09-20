@@ -34,13 +34,13 @@ The parts:
 - Any comments you want to leave? x
 ![comments](wireframes/comments.png)
 
-While there is no nav bar, each part of the form should be at its own route. Clicking next should move the user to the appropriate step in the process.
+While there is no nav bar, each part of the form should be at its own route. Clicking next should move the user to the appropriate step in the process. x
 
 ### Input Validation
 
-Each step should only allow the user to advance to the next step if a score was provided. Be sure to tell the user in some way that a value must be provided.
+Each step should only allow the user to advance to the next step if a score was provided. Be sure to tell the user in some way that a value must be provided. x
 
-The `Comments` step does not need to be validated, an empty value is okay.
+The `Comments` step does not need to be validated, an empty value is okay. x
 
 ## THE REVIEW COMPONENT
 

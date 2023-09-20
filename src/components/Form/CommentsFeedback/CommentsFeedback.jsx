@@ -10,20 +10,18 @@ function CommentsFeedback() {
     const dispatch = useDispatch();
 
     const onClick = () => {
-        if (response != '' && response != null) {
             dispatch({ type: 'SET_NEXT_STEP' })
-        }
-    }
-  
+        } 
   
     return (
       <div>
               <h2>Any Comments you want to leave?</h2>
             <div>
-                <lable>Comments?</lable>
+                <label>Comments?</label>
             </div>
             <input
                 type="text"
+                placeholder="comments or concerns?"
                 value={response}
                 onChange={(event) => setResponse(event.target.value)}
             />
