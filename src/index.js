@@ -11,7 +11,7 @@ const formState = {
     feeling: "",
     understanding: "",
     support: "",
-    comments: ""
+    comments: "",
 }
 
 const form = (state = formState, action) => {
@@ -25,11 +25,17 @@ const form = (state = formState, action) => {
         } else if (action.payload.step === 4) {
             state.comments = action.payload.response;
         }
+
         return {
             ...state,
             step: state.step + 1,
         };
     }
+
+    if (action.type === 'RESET_FORM'){
+        return formState;
+    }
+
     return state;
 }
 
