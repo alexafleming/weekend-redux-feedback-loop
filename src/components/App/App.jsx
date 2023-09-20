@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import './App.css';
-import Form from './Form/Form';
+import Form from '../Form/Form';
 
 function App() {
 
