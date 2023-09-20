@@ -1,10 +1,20 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { useState } from "react"
 
 // - How well are you being supported?
 // ![support](wireframes/supported.png)
 
 function SupportFeedback() {
-    
+    const [response, setResponse] = useState("");
+    const dispatch = useDispatch();
+
+    const onClick = () => {
+        if (response != '' && response != null) {
+            dispatch({ type: 'SET_NEXT_STEP' })
+        }
+    }
+
 
 
 
@@ -14,8 +24,12 @@ function SupportFeedback() {
             <div>
                 <lable>Supported?</lable>
             </div>
-            <input type="number" />
-            <button>Next</button>
+            <input
+                type="number"
+                value={response}
+                onChange={(event) => setResponse(event.target.value)}
+            />
+            <button onClick={() => [onClick()]}>Next</button>
         </div>
     );
 }
