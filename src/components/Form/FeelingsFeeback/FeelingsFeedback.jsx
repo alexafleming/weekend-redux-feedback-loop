@@ -1,11 +1,19 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import {useState} from "react"
 
 // - How are you feeling today?
 // ![feeling](wireframes/feeling.png)
 
 function FeelingsFeedback() {
+  const [response, setResponse] = useState("");
+  const dispatch = useDispatch();
 
-
+  const onClick = () => {
+    if (response != '' && response != null) {
+      dispatch({ type: 'SET_NEXT_STEP' })
+    }
+  }
 
   return (
     <div>
@@ -13,8 +21,12 @@ function FeelingsFeedback() {
       <div>
         <label>feeling?</label>
       </div>
-      <input type="number"/>
-      <button>Next</button>
+      <input
+        type="number"
+        value={response}
+        onChange={(event) => setResponse(event.target.value)}
+      />
+      <button onClick={() => [onClick()]}>Next</button>
     </div>
   );
 }
