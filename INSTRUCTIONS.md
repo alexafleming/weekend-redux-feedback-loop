@@ -25,13 +25,13 @@ Create a multi-part form that allows users to leave feedback for today.
 There will be 4 views for the form parts.
 
 The parts:
-- How are you feeling today?
+- How are you feeling today? x
 ![feeling](wireframes/feeling.png)
-- How well are you understanding the content?
+- How well are you understanding the content? x
 ![understanding](wireframes/understanding.png)
-- How well are you being supported?
+- How well are you being supported? x
 ![support](wireframes/supported.png)
-- Any comments you want to leave?
+- Any comments you want to leave? x
 ![comments](wireframes/comments.png)
 
 While there is no nav bar, each part of the form should be at its own route. Clicking next should move the user to the appropriate step in the process.

@@ -11,10 +11,10 @@ function Form() {
   
     return (
       <div>
-        <FeelingsFeedback />
-        <UnderstandingFeedback />
-        <SupportFeedback />
-        <CommentsFeedback />
+        {step === 1 && <FeelingsFeedback/>}
+        {step === 2 && <UnderstandingFeedback/>}
+        {step === 3 && <SupportFeedback />}
+        {step === 4 && <CommentsFeedback/>}
       </div>
     );
   }

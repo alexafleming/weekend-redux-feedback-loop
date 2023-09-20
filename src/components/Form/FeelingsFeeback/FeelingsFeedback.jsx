@@ -14,6 +14,7 @@ function FeelingsFeedback() {
         <label>feeling?</label>
       </div>
       <input type="number"/>
+      <button>Next</button>
     </div>
   );
 }
