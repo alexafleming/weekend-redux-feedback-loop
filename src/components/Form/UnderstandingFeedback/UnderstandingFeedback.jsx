@@ -1,6 +1,6 @@
 import React from "react";
 
-function FeelingsFeedback() {
+function UnderstandingFeedback() {
     
   
   
@@ -11,4 +11,4 @@ function FeelingsFeedback() {
     );
   }
   
-  export default FeelingsFeedback;
+  export default UnderstandingFeedback;
