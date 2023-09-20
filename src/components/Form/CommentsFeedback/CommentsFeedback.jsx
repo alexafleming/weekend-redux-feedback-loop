@@ -10,7 +10,7 @@ function CommentsFeedback() {
     const dispatch = useDispatch();
 
     const onClick = () => {
-            dispatch({ type: 'SET_NEXT_STEP' })
+        dispatch({ type: 'SET_NEXT_STEP', payload: {step: 4, response: response} })
         } 
   
     return (

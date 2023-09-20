@@ -11,7 +11,7 @@ function UnderstandingFeedback() {
 
     const onClick = () => {
         if (response != '' && response != null) {
-            dispatch({ type: 'SET_NEXT_STEP' })
+            dispatch({ type: 'SET_NEXT_STEP', payload: {step: 2, response: response} })
         } else {
             alert("Enter a value")
         }

@@ -11,7 +11,7 @@ function FeelingsFeedback() {
 
   const onClick = () => {
     if (response != '' && response != null) {
-      dispatch({ type: 'SET_NEXT_STEP' })
+      dispatch({ type: 'SET_NEXT_STEP', payload: {step: 1, response: response} })
     }else{
       alert("Enter a value")
   }
